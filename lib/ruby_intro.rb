@@ -11,7 +11,7 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  return arr.empty? ? false : arr.length == 1 ? false : arr.combination(2).to_a.select {|x| x[0] + x[1] == n}.empty? ? false : true
 end
 
 # Part 2
